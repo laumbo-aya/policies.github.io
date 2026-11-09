@@ -1,0 +1,96 @@
+:root {
+  color-scheme: light;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #17191c;
+  background: #f0f4f8;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: #f0f4f8;
+}
+
+.page {
+  width: min(100%, 1120px);
+  margin: 0 auto;
+  padding: 48px 24px 56px;
+}
+
+h1 {
+  margin: 0 0 42px;
+  color: #101214;
+  font-size: clamp(1.7rem, 3vw, 2.25rem);
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+}
+
+.requirements {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.card {
+  min-height: 288px;
+  padding: 44px 24px 32px;
+  border: 1px solid #edf0f3;
+  border-radius: 26px;
+  background: #fff;
+  box-shadow: 0 2px 3px rgb(20 31 45 / 9%);
+  display: flex;
+  flex-direction: column;
+}
+
+.card h2 {
+  margin: 0 0 62px;
+  font-size: 1.22rem;
+  line-height: 1.35;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+}
+
+.card ul {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.card li {
+  padding-left: 1px;
+}
+
+@media (max-width: 640px) {
+  .page {
+    padding: 32px 16px 40px;
+  }
+
+  h1 {
+    margin-bottom: 28px;
+  }
+
+  .requirements {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .card {
+    min-height: 220px;
+    padding: 30px 22px 26px;
+    border-radius: 22px;
+  }
+
+  .card h2 {
+    margin-bottom: 36px;
+  }
+}
